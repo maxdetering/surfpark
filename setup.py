@@ -5,3 +5,6 @@ N_CHAMBERS  = 36
 T_EXPAND    = 0.3
 T_HOLD      = 0.0
 T_RELAX     = 1.0
+
+# relative file path to .csv file with wave information
+PATH        = "./wave_info.csv"
