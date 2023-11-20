@@ -9,10 +9,11 @@ Mit diesem Programm können beliebige Wellen auf dem Modell erzeugt werden.
 ### Vorraussetzungen
 - Eine Python 3.x Installation auf dem Revolution Pi
 - Das Python Modul revpimodio2
+- Die Python Module pandas, threading, time
 - Eine Konfiguration des Revolution Pi Core mit angeschlossenen DIO/DO-Modulen wie folgt:
     Der Output-Anschluss für das Einlassventil an der n-ten Wellenkammer wurde zu IntakeValve_n umbenannt,
         wobei n hier durch die entsprechende Zahl ersetzt wurde.
-    Der Output-Anschluss für das Auslassventil an der n-ten Wellenkammer wurde zu ExhaustValve_m umbenannt,
+    Der Output-Anschluss für das Auslassventil an der n-ten Wellenkammer wurde zu ExhaustValve_n umbenannt,
         wobei n hier durhc die entsprechende Zahl ersetzt wurde.
     Alle Startwerte für die Variablen sind auf 0/False gesetzt.
 
@@ -20,13 +21,14 @@ Mit diesem Programm können beliebige Wellen auf dem Modell erzeugt werden.
 - setup.py
     Diese Datei enthält globale Variablen.
 - chamber.py
-    Diese Datei enthält die Funktion single_wave, mit der eine einzige Wellenkammer ausgelöst wird.
+    Diese Datei enthält die Funktion create_wave, mit der eine einzige Wellenkammer für eine Welle ausgelöst wird.
+    Diese Datei enthält die Funktion create_waveset, mit der ein ganzes Wellenset in einer Wellenkammer ausgelöst werden kann.
 - waves.py
-    Diese Datei enthält die Funktion create_wave, mit der eine beliebige Welle mithilfe aller Wellenkammern
-    erzeugt werden kann. Mit der enthaltenen Funktion clean_up können alle Ventile zum Programmenede
-    geschlossen werden.
+    Diese Datei enthält die Funktion create_wave, mit der eine beliebige Welle mithilfe aller Wellenkammern erzeugt werden kann.
+    Diese Datei enthält die Funktion create_waveset, mit der ein beliebiges Wellenset mithilfe aller Wellenkammern erzeugt werden kann.
+    Mit der enthaltenen Funktion clean_up können alle Ventile zum Programmenede geschlossen werden.
 - main.py
-    Die Hauptdatei enthält die grafische Benutzeroberfläche, mit der eine einzelne Wellenfront erzeugt werden kann.
+    Die Hauptdatei enthält die main-Funktion, in der die Welleninformationen aus der .csv-Datei eingelesen werden und die Wellen erzeugt werden.
 
 
 
