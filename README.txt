@@ -5,6 +5,7 @@ Mit diesem Programm können beliebige Wellen auf dem Modell erzeugt werden.
 - waves.py
 - chamber.py
 - setup.py
+- Ansteuerung-Wellenerzeugung.xlsx
 
 ### Vorraussetzungen
 - Eine Python 3.x Installation auf dem Revolution Pi
@@ -21,23 +22,21 @@ Mit diesem Programm können beliebige Wellen auf dem Modell erzeugt werden.
 - setup.py
     Diese Datei enthält globale Variablen.
 - chamber.py
-    Diese Datei enthält die Funktion create_wave, mit der eine einzige Wellenkammer für eine Welle ausgelöst wird.
     Diese Datei enthält die Funktion create_waveset, mit der ein ganzes Wellenset in einer Wellenkammer ausgelöst werden kann.
 - waves.py
-    Diese Datei enthält die Funktion create_wave, mit der eine beliebige Welle mithilfe aller Wellenkammern erzeugt werden kann.
     Diese Datei enthält die Funktion create_waveset, mit der ein beliebiges Wellenset mithilfe aller Wellenkammern erzeugt werden kann.
     Mit der enthaltenen Funktion clean_up können alle Ventile zum Programmenede geschlossen werden.
 - main.py
-    Die Hauptdatei enthält die main-Funktion, in der die Welleninformationen aus der .csv-Datei eingelesen werden und die Wellen erzeugt werden.
+    Die Hauptdatei enthält die main-Funktion, in der die Welleninformationen aus der .xlsx-Datei eingelesen werden und die Wellen erzeugt werden.
 
 
 
 
 
 ### Verwendung
-In der Datei wave_info.xlsx sind die Informationen zur Erzeugung eines Wellensets abzuspeichern. Jede Spalte enthaelt dabei die relevanten Zeitintervalle für eine Wellenkammer. Die Spalte enhält dabei Aneinanderreihungen von 4er-Gruppen von Zeitintervallen, die je eine Welle beschreiben. Eine Welle ist durch die 4 Wellenphasen "Totzeit/Delay", "Ausdehnung/Expansion", "Totzeit/Hold" und "Ablassen/Relaxation" gekennzeichnet. Die Zeitintervalle sind in Sekunden anzugeben.
+In der Datei Ansteuerung-Wellenerzeugung.xlsx sind die Informationen zur Erzeugung eines Wellensets abzuspeichern. Jede Spalte enthaelt dabei die relevanten Zeitintervalle für eine Wellenkammer. Die Spalte enhält dabei Aneinanderreihungen von 4er-Gruppen von Zeitintervallen, die je eine Welle beschreiben. Eine Welle ist durch die 4 Wellenphasen "Totzeit/Delay", "Ausdehnung/Expansion", "Totzeit/Hold" und "Ablassen/Relaxation" gekennzeichnet. Die Zeitintervalle sind in Sekunden anzugeben.
 
-Die Beispieldatei wave_info.xlsx enthaelt Informationen zur Erzeugung einer einzelnen, gleichmaessigen Wellenfront.
+Die Beispieldatei Ansteuerung-Wellenerzeugung.xlsx enthaelt Informationen zur Erzeugung einer einzelnen, gleichmaessigen Wellenfront.
 
 
 
