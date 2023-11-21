@@ -14,10 +14,10 @@ Mit diesem Programm können beliebige Wellen auf dem Modell erzeugt werden.
 - Das Python Modul revpimodio2
 - Die Python Module pandas, threading, time, openpyxl
 - Eine Konfiguration des Revolution Pi Core mit angeschlossenen DIO/DO-Modulen wie folgt:
-    - Der Output-Anschluss für das Einlassventil an der n-ten Wellenkammer wurde zu IntakeValve_n umbenannt,
+    - Der Output-Anschluss für das Einlassventil an der n-ten Wellenkammer wurde zu 'IntakeValve_n' umbenannt,
         wobei n hier durch die entsprechende Zahl ersetzt wurde.
-    - Der Output-Anschluss für das Auslassventil an der n-ten Wellenkammer wurde zu ExhaustValve_n umbenannt,
-        wobei n hier durhc die entsprechende Zahl ersetzt wurde.
+    - Der Output-Anschluss für das Auslassventil an der n-ten Wellenkammer wurde zu 'ExhaustValve_n' umbenannt,
+        wobei n hier durch die entsprechende Zahl ersetzt wurde.
     - Alle Startwerte für die Variablen sind auf 0/False gesetzt.
 
 ## Beschreibung
