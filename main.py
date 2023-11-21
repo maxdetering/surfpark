@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import revpimodio2
 from setup import N_CHAMBERS, PATH
 import waves

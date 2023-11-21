@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import chamber
 from setup import N_CHAMBERS
 import threading

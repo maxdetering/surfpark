@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import time
 
 # create wave from single wave chamber

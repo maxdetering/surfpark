@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # define global variables
 # number of wave chambers
 N_CHAMBERS  = 36
