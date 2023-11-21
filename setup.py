@@ -10,3 +10,4 @@ T_RELAX     = 1.0
 
 # relative file path to .xlsx file with wave information
 PATH        = "./wave_info.xlsx"
+TABLENAME   = "Wellenzeitplan"
