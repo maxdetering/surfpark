@@ -34,7 +34,10 @@ Mit diesem Programm können beliebige Wellen auf dem Modell erzeugt werden.
 
 
 
+### Verwendung
+In der Datei wave_info.xlsx sind die Informationen zur Erzeugung eines Wellensets abzuspeichern. Jede Spalte enthaelt dabei die relevanten Zeitintervalle für eine Wellenkammer. Die Spalte enhält dabei Aneinanderreihungen von 4er-Gruppen von Zeitintervallen, die je eine Welle beschreiben. Eine Welle ist durch die 4 Wellenphasen "Totzeit/Delay", "Ausdehnung/Expansion", "Totzeit/Hold" und "Ablassen/Relaxation" gekennzeichnet. Die Zeitintervalle sind in Sekunden anzugeben.
 
+Die Beispieldatei wave_info.xlsx enthaelt Informationen zur Erzeugung einer einzelnen, gleichmaessigen Wellenfront.
 
 
 
