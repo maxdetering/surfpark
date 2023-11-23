@@ -1,6 +1,8 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# define global variables
+# This file contains the global variables / setup for the experiment.
+
 # number of wave chambers
 N_CHAMBERS  = 36
 
