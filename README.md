@@ -11,8 +11,7 @@ Mit diesem Programm können beliebige Wellen auf dem Modell erzeugt werden.
 
 ## Vorraussetzungen
 - Eine Python 3.x Installation auf dem Revolution Pi
-- Das Python Modul revpimodio2
-- Die Python Module pandas, threading, time, openpyxl
+- Die Python Modul erevpimodio2, pandas, threading, time, openpyxl (Installiere mit `pip install -r requirements.txt`)
 - Eine Konfiguration des Revolution Pi Core mit angeschlossenen DIO/DO-Modulen wie folgt:
     - Der Output-Anschluss für das Einlassventil an der n-ten Wellenkammer wurde zu 'IntakeValve_n' umbenannt,
         wobei n hier durch die entsprechende Zahl ersetzt wurde.
